@@ -1,5 +1,5 @@
 #contact-us {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
 }
 form {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -31,7 +31,7 @@ form p {
   outline: none;
 }
 .form-group input::placeholder {
-  font-size: o.7rem;
+  font-size: 0.7rem;
 }
 .form-btn {
   color: #fff;

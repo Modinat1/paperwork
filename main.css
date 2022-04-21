@@ -59,7 +59,7 @@
   width: 100px;
   height: 5px;
   top: 35px;
-  left: 40%;
+  left: 35%;
 }
 
 .show {
@@ -131,7 +131,7 @@ nav ul a:hover {
 
 /* HERO STYLING */
 .hero-container {
-  background: url(asset/images/hero-image.jpg) no-repeat center/cover;
+  background: url(asset/images/hero-image.jpg) no-repeat top/cover;
 }
 
 .overlay {
@@ -140,7 +140,7 @@ nav ul a:hover {
 }
 
 .hero-text {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 4rem;
 }
@@ -148,6 +148,7 @@ nav ul a:hover {
 .hero-text h1 {
   font-size: 1.5rem;
   margin: 3rem 2rem 1rem;
+  /* padding: 2.5rem 0 0; */
 }
 
 .hero-text p {
@@ -162,7 +163,7 @@ nav ul a:hover {
 /* WHY CHOOSE US STYLING */
 .choose-us-img {
   display: block;
-  max-width: 310px;
+  max-width: 350px;
   height: 300px;
   margin: auto;
 }
@@ -229,8 +230,8 @@ nav ul a:hover {
   width: 100px;
   height: 100px;
   top: -100px;
-  left: 110px;
-  /* transform: translateX(50%); */
+  /* left: 110px; */
+  transform: translateX(30%);
   margin-top: 2rem;
 }
 
@@ -279,9 +280,38 @@ footer {
   opacity: 0.5;
 }
 
+
+/* TAB DEVICES MEDIA QUERY */
+
+@media only screen and (min-width: 600px){
+.subheading::after {
+  transform: translateX(40%);
+}
+.card .profile-image {
+  left: 33%;
+}
+/* WHY CHOOSE US STYLING */
+.choose-us-img {
+  display: block;
+  max-width: 500px;
+  height: 300px;
+  margin: auto;
+}
+.business-zone-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* FOOTER STYLING */
+footer .flex-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* MEDIA QUERY FOR LARGER SCREENS */
 @media (min-width: 764px) {
   .subheading::after {
-    left: 46%;
+    left: 43%;
   }
 
   #why-choose-us,
@@ -304,7 +334,8 @@ footer {
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
     top: 0;
   }
 
@@ -323,12 +354,13 @@ footer {
   /* HERO STYLING */
   .hero-container {
     margin-top: 2rem;
+    height: 450px;
   }
 
   .hero-text {
     color: #fff;
     text-align: center;
-    padding: 5rem;
+    padding: 7rem;
   }
 
   .hero-text h1 {
@@ -347,13 +379,13 @@ footer {
   }
 
   .choose-us {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .choose-us-img {
-    max-width: 500px;
-    margin-right: 3rem;
+    width: 500px;
+    object-fit: cover;
   }
 
   .choose-us-text {
@@ -392,6 +424,9 @@ footer {
     box-shadow: 0 0 10px gray;
     padding: 2rem;
     width: 30%;
+  }
+  .card .profile-image{
+    left: 28%;
   }
 
   /* FOOTER STYLING */

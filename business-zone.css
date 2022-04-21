@@ -59,7 +59,7 @@
 }
 
 .other-services li {
-  margin: 3rem 1rem;
+  margin: 3rem 2rem;
 }
 
 .other-services ul a {
@@ -96,6 +96,25 @@
   text-align: center;
 }
 
+/* MEDIA QUERY ON TABLET DEVICES */
+@media (min-width: 600px){
+  .business-container {
+    max-width: 600px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    margin: auto;
+  }
+  .other-services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
 @media (min-width: 764px) {
   .business-container {
     max-width: 1300px;
@@ -118,5 +137,9 @@
     display: flex;
     align-items: center;
     margin-top: 3rem;
+  }
+  .other-services ul{
+    display: flex;
+    justify-content: space-between;
   }
 }
