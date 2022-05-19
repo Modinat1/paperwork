@@ -131,11 +131,12 @@ nav ul a:hover {
 
 /* HERO STYLING */
 .hero-container {
-  background: url(asset/images/hero-image.jpg) no-repeat top/cover;
+  background: url(asset/images/hero-image.jpg)
+   no-repeat bottom center/cover;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
 }
 

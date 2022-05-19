@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f3eee8;
+    color: #4d586f;
+    font-family: "Roboto", sans-serif;
+} 
+#blog{
+    margin-top: 4rem;
+}
+#result{
+    width: 90%;
+    margin: auto; 
+    line-height: 1.5;
+}
+.news{
+    background-color: #f0e6da;
+    margin: 5rem;
+    padding: 2rem;
+    text-align: center;
+}  
+.news-image{
+    width: 100%;
+}
+
+@media (min-width: 764px){
+#blog .title{
+    margin-top: -1rem;
+    padding-top: 1.3rem;
+}
+#result{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+}

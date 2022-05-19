@@ -36,16 +36,13 @@
   margin-bottom: 1rem;
 }
 @media (min-width: 764px) {
+  #about-us .title{
+    margin-top: -1rem;
+    padding-top: 1.3rem;
+  }
   .faq {
     display: flex;
     justify-content: space-around;
   }
-  .intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  /* .faq .question {
-    flex: 1;
-  } */
+
 }
